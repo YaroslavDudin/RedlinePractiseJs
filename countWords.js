@@ -1,6 +1,6 @@
 const readlineSync= require('readline-sync');
-const countWords = (sentence) => {
-    return sentence.split(" ").length
+const wordCount = (sent) => {
+    return sent.split(" ").length
 
 };
 console.log(countWords(readlineSync.question('sentence:')));

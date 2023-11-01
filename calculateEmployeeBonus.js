@@ -2,7 +2,8 @@ const readlineSync = require('readline-sync');
 const calculateEmployeeBonus = (salary, performanceRating) => {
     if ( performanceRating >= 8){
         salary = salary * 0.20;
-  }else{
+  }
+  else {
     salary = salary * 0.10;  
   }
   

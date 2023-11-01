@@ -1,12 +1,16 @@
 const readlineSync = require('readline-sync');
-const reverseStringWithException = (str, exception) => {
-    function rev (str) {
-        const splitT= str.split("");
-        const revT= splitT.reverse();
-        const joinT= revT.join("");
-        return joinT
+const reverseWord = (str,exc) => {
+    let result = '';
+    let i = str.length;
+    while (i > 0){
+    result = result + str[i-1];
+    i = i - 1;
     }
-    return  exception + ' ' + rev(str.substring(0, str.indexOf(' ')));
+    return result;
+    };
+    
+    const reverseStringWithException = (str,exc) =>{
+    return exc + ' ' + reverseWord(str.substring(0, str.indexOf(' ')));
+    }
 
-}; 
 console.log(reverseStringWithException(readlineSync.question('str: '),readlineSync.question('exception: ')));
