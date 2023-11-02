@@ -1,5 +1,5 @@
-const readlineSync = require('readline-sync');
-const calculateRectangleProperties = (width, height) => {
+const readlineSync = require ('readline-sync');
+const calculateRectangleProperties = (width, height)  => {
    const square = width * height
    const perimeter = (width * 2) + (height * 2)
    return square + ' ' + perimeter

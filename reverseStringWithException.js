@@ -10,7 +10,7 @@ const reverseWord = (str,exc) => {
     };
     
     const reverseStringWithException = (str,exc) =>{
-    return exc + ' ' + reverseWord(str.substring(0, str.indexOf(' ')));
+    return exc + ' ' + reverseWord (str.substring(0, str.indexOf(' ')));
     }
 
-console.log(reverseStringWithException(readlineSync.question('str: '),readlineSync.question('exception: ')));
+console.log(reverseStringWithException (readlineSync.question ('str: '),readlineSync.question('exception: ')));

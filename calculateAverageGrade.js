@@ -3,7 +3,7 @@ const calculateAverageGrade = (grades) =>{
     const gradesAr = grades.split(" ");
     const gradesSum = 0;
 
-    for(let i = 0; i < gradesAr.length; i++) {
+    for(let i = 0; i < gradesAr.length; i++ ) {
         gradesSum += parseInt(gradesAr[i]);
     };
 

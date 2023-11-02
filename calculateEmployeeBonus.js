@@ -1,5 +1,5 @@
 const readlineSync = require('readline-sync');
-const calculateEmployeeBonus = (salary, performanceRating) => {
+const calculateEmployeeBonus = (salary, performanceRating ) => {
     if ( performanceRating >= 8){
         salary = salary * 0.20;
   }

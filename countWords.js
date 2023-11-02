@@ -1,5 +1,5 @@
 const readlineSync= require('readline-sync');
-const wordCount = (sent) => {
+const wordCount = ( sent) => {
     return sent.split(" ").length
 
 };
